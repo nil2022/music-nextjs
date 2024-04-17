@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Link from "next/link";
 import { HoverEffect } from "./ui/card-hover-effect";
 
@@ -49,9 +49,6 @@ const featuredWebinars = [
 ];
 
 function UpcomingWebinars() {
-
-
-
     return (
         <div className="p-12 bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -64,13 +61,13 @@ function UpcomingWebinars() {
                     </p>
                 </div>
                 <div className="mt-10">
-                    <HoverEffect items={featuredWebinars.map((webinar) => (
-                        {
+                    <HoverEffect
+                        items={featuredWebinars.map((webinar) => ({
                             title: webinar.title,
                             description: webinar.description,
                             link: webinar.slug,
-                        }
-                    ))}/>
+                        }))}
+                    />
                 </div>
                 <div className="mt-10 text-center">
                     <Link
