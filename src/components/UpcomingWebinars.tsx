@@ -47,6 +47,7 @@ const featuredWebinars = [
         isFeatured: true,
     },
 ];
+
 function UpcomingWebinars() {
 
 
